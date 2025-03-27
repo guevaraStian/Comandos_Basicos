@@ -1,0 +1,14 @@
+COMANDOS GO:
+
+go versión  //Ver la versión de go
+go help   // Ver que opciones hay
+go run .  //Ejecutar el protecto
+go build main.go //Crear el archivo de las api
+go mod init nombre_carpeta  //este se ejecuta desde afuera de la carpeta del archivo
+
+go mod tidy  // agregar requirenmed de autenticacion
+go install golang.org/x/vuln/cmd/govulncheck@latest  //Instalación de paquetes
+go get golang.org/x/example/hello/reverse  //agregar dependencia con get
+go work init ./nombre_carpeta  //inicializar el ambiente de trabajo
+go work use ./ejemplo/hello  //añade espacio de trabajo
+
