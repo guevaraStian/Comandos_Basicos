@@ -1,0 +1,16 @@
+# Los siguientes comandos son para usar el leguaje de programación ruby
+#Confirmamos la instalación con el siguiente comando
+COMANDOS RUBY
+ruby -v //ver la versión de ruby
+ruby -e  // ejecutar ruby
+ruby nombre_archivo.rb    // ejecutar un archivo rb
+
+COMANDOS FRAMEWORK RAILS
+gem install rails   //instalamos rails que es framework de ruby
+rails --version
+rails new ProjectDemo   //crear la aplicación son
+cd ProjectDemo
+rails generate scaffold note title description:text   //ejemplo de proyecto en el framework
+rails db:migrate  //comando para migrar la base de datos
+rvm use 3.0.0 //se escoge la version
+rails s //ejecutar el proyecto desde consola
