@@ -1,0 +1,25 @@
+# Los siguientes comandos DIG son para validar informacion sobre dominios
+# instalamos el software con el siguiente comando
+get install dnsutils
+
+// Verificar si un dominio tiene DNSSEC activado
+dig +short dnssec dominio.com
+
+// Identificar servidores de nombres de un dominio
+dig NS dominio.com
+
+// Verificar si existen registros MX (servidores de correo) para un dominio
+dig MX dominio.com
+
+// Realizar una búsqueda DNS inversa
+dig -x 123.45.67.89
+
+// Verificar si un dominio tiene registros SPF o DKIM
+dig TXT @ns1.dominio.com dominio.com
+
+// Explorar la ruta de resolución DNS (trace)
+dig +trace dominio.com
+
+// Verificar la seguridad de un servidor web mediante su registro TXT
+dig TXT @ns1.dominio.com _acme-challenge.dominio.com
+
