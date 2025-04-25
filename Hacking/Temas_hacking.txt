@@ -1,0 +1,271 @@
+///////////////////////////////////////////////////////////////2024-12-12/////////////
+//////////////////LINKS CON INFORMACION IMPORTANTE///////////////////////////////////////
+/////////////////////////////////////////////////////////Sebastian Guevara Sanchez///
+
+Colombia
+www.colpensiones.gov.co
+www.fosyga.in/fosyga/
+
+https://dnsdumpster.com/          // verificar vulnerabilidades de una pagina web
+https://www.cual-es-mi-ip.net/geolocalizar-ip-mapa
+https://www.ipfingerprints.com/
+nslookup paginaweb.com     //Con este codigo en la consola de kali linux podemos ver la ip publica de una pagina
+
+Cobertura de una red de telefonia claro https://www.claro.com.co/personas/soporte/mapas-de-cobertura/
+Cobertura de una red de telefonia Movistarhttps://www.movistar.com.co/mapa-de-cobertura-movil
+bases militares https://www.datos.gov.co/Seguridad-y-Defensa/ZONAS-Y-DISTRITOS-MILITARES-DE-COLOMBIA/jpus-ug29 
+espectro electromagnetico en colombia con mapa http://conalespec.ane.gov.co:8084/               
+mapa de antenas en colombia http://medicionantenas.ane.gov.co:82/#           
+Mapa de trafico en el mundo https://www.waze.com/es/livemap?utm_source=waze_website&utm_campaign=waze_website&utm_expid=.K6QI8s_pTz6FfRdYRPpI3A.0&utm_referrer=      
+Detecto de radares moviles o radares fijos  http://www.radarbot.com/    
+Emisoras en colombia por el ministerio tic https://www.mintic.gov.co/portal/maparadio/631/w3-channel.html 
+Contrase�as de aeropuerto https://ensedeciencia.com/2021/03/15/lista-de-contrasenas-wi-fi-de-todos-los-aeropuertos-del-mundo/?fbclid=IwAR0RJmuXj-_fQV89L8lWoZfCk-mY0g5nhxGG0gG8mJslFxCQan4TPMbKBa8
+Significado y raiz de los apellidos https://www.familysearch.org/es/surname
+Bibliotega de geneologica de colombia https://www.academiadegenealogia.org/biblioteca-juan-florez-ocariz
+Mapas de hackeo en vivo https://hackersonlineclub.com/live-cyber-attack-maps/?fbclid=IwAR2WnlsQe48Pa2E9TxNaUnjcrvrT7iZ7LgFC843wMHLHOsiPwRaejZkdV-w
+Frecuencias de uso libre en colombia https://normograma.mintic.gov.co/mintic/docs/resolucion_ane_0711_2016.html
+
+----------------------------------------------------------------------------
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////DEEP WEB///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+LINKS
+http://oniot2zvfczp4lpc.onion/cat4/
+
+CHAT Y RED SOCIAL
+http://connectkjsazkwud.onion/register
+http://galaxy3bhpzxecbywoa2j4tg43muepnhfalars4cce3fcx46qlc6t3id.onion/?offset=25#
+http://tetatl6umgbmtv27.onion/
+
+Direcci�n onion: https://wwhclublci77vnbi.onion/
+
+FOROS DE HACKING
+http://verified2ebdpvms.onion/
+https://forum.exploit.in/
+http://crdclub4wraumez4.onion/
+https://probiv7jg46vmbox.onion/
+http://damagelabo2jiykj.onion/
+
+--------------------------------------------------------------
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////BUSQUEDAS EN GOOGLE DE VULNERABILIDADES///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+PROXYS PARA ANONIMATO
+http://kproxy.com/
+https://www.proxysite.com/es/
+https://hidester.com/es/proxy/
+https://hide.me/en/proxy
+https://www.vpnbook.com/webproxy
+https://www.adslzone.net/reportajes/internet/mejores-proxy-gratis/
+
+
+
+-------------------------------
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////WEB SHELL ///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+nslookup paginaweb.com     //Con este codigo en la consola de kali linux podemos ver la ip publica de una pagina
+tracert -d google.com
+https://dnsdumpster.com/            //Informacion de servidores de un dominio https://twitter.com/hackertarget/
+InSSIDer       //con este programa se pueden ver las direcciones mac de los routers.
+
+///Para habilitar auditoria y ver los inicios de sesion
+gpedit.msc   //Conf windows, confg de seguridad, directiva locales, directivas de auditoria
+eventvwr.msc  //registro de win, seguridad
+
+--------------------------------------------------------
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////VER CORREOS E IP DE UN SERVIDOR ///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+haveibeenpwned.com.
+https://www.youtube.com/watch?v=picZ4rGZq4k&feature=youtu.be&fbclid=IwAR1xycpxzMFh5nLugR4gTqtATw67fSpeFPtuVPVfXbAmn5ch_QeF-nNMNMg
+https://github.com/m4ll0k/Infoga
+http://www.cursodehackers.com/ManInTheMiddle.html
+
+----------------------------------------------------------------------------
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////CRIPTOGRAFIA Y ESTEGANOGRAFIA ///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+//////DEEPFAKE - Crear videos de una imagen fija
+https://colab.research.google.com/github/AwaleSajil/DeepFake_1/blob/master/first_order_model_demo(Youtube)_new_audioV5_a.ipynb#scrollTo=tQB-Dv8ByURc
+https://github.com/AliaksandrSiarohin/first-order-model
+https://www.xatakandroid.com/listas/cinco-aplicaciones-para-crear-divertidos-deepfakes-android
+
+///// ESTEGANOGRAFIA 
+//se ingresa una imagen y el documento en un mismo archivo y el documento se mete en un RAR luego se abre consola y se ingresa este codigo
+COPY/B nombreimagen.png + nombrearchivorar.rar nombredelanuevaimagen.png
+
+ESTEGANOGRAFIA EN AUDIOS
+https://noticiasseguridad.com/tutoriales/transferir-cualquier-dato-confidencial-mediante-el-sonido-usando-deepsound/?fbclid=IwAR3KvIeB-lVp1FU-Nq6S3O-rct26NKccVItA2dnJzcagmXTIbcgkOa4D-0M
+
+ESTEGANOGRAFOS MAS USADOS
+https://noticiasseguridad.com/tutoriales/las-6-mejores-herramientas-gratuitas-de-esteganografia-para-profesionales-de-ciberseguridad/?fbclid=IwAR0ujbKsSnudTri3QwGscpTpzpS3BtHi_LB_CK8o48ZxA8K7G0iURcE75V0
+
+GUARDAR VIRUS EN UNA IMAGEN con HxD Hex Editor HxD y Winrar Archiver
+https://noticiasseguridad.com/tutoriales/como-disfrazar-un-malware-como-txt-jpeg-o-cualquier-formato-de-archivo-en-6-sencillos-pasos/?fbclid=IwAR3tFdpggobciIZ9xRfOsdruF9Be3gbWSFyUX1mkrXv24OZQO9lj05f-NGk
+
+---------------------------------------------------------------------------
+Detector de camara:
+Spy Camera Detector � https://play.google.com/store/apps/details?id=com.trackapps.hiddencameradetected
+Hidden Camera � https://play.google.com/store/apps/details?id=com.softmaticsoft.hiddencameradetectorspysecret
+Hidden Camera Detector � https://play.google.com/store/apps/details?id=hiddencamdetector.futureapps.com.hiddencamdetector
+
+ANDRILLER
+DRFONE WONDERSHARE
+SPY NOTE
+ANDRORAT
+AHMYTH
+DROIDJACK  - cuesta
+REPTILICUS  - cuesta
+
+CREAR JAMMER DE WIFI CON SOFTWARE LIBRE https://noticiasseguridad.com/tutoriales/venga-a-tus-vecinos-bloqueando-cualquier-wifi-en-una-cuadra-3-formas-de-crear-un-jammer-wifi-sin-hardware/?fbclid=IwAR01mymn4NDvC9zRog34bprcqDbgNbXwAefP_VnN_UOTjG8737ogniBMwqQ
+----------------------------------------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////
+//////INHIBIDOR DE FRECUENCIAS GPS DE 1000Mhz Y 1500Mhz Y DERRIBADOR DE DRONES  /////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+https://www.xdrones.es/inhibidor-de-frecuencia-casero-derribar-drones-inhibidor-gps/
+GUIA PARA HACKEAR DRON https://www.xdrones.es/guia-para-hackear-el-ar-drone-2-0/
+https://www.google.com/search?q=inhibidor+de+microondas&rlz=1C1SQJL_esCO872CO872&oq=inhibidor+de+microondas&aqs=chrome..69i57.9496j1j7&sourceid=chrome&ie=UTF-8
+
+////JAMMER DE BLOUTUBE DESDE UN CELULAR
+https://noticiasseguridad.com/tutoriales/cobre-venganza-de-sus-vecinos-ruidosos-saboteando-sus-bocinas-bluetooth-como-crear-un-bluetooth-jammer-con-solo-9-comandos-y-sin-hardware-especial/?fbclid=IwAR1XOruPVwjShfh7SNxa6OcTvCMLSqjtazRwu_vdxuJbMSK60mJA1OpJ6eE
+
+////PISTOLA DE ELECTROMAGNETISMO
+https://www.youtube.com/watch?v=l_U5_NhLck8
+
+---------------------------------------------------------------------------------------
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//////TIENDAS DE INTERCEPTACION E INHIBICION DE EL ESPECTRO ELECTROMAGNETICO  /////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+https://www.thespyphone.com/
+https://www.intercept.ws/
+https://www.contrainteligencia.com/
+https://www.mollitiamindustries.com/
+
+Mejores programas para espiar android, iphon y computador
+https://www.adslzone.net/listas/mejores-programas/espiar-pc/
+
+/////TIENDA DE ARTEFACTOS ESPIA
+https://www.tacticalsecurity.net/
+Estos artefactos funcionan en un rango de 300 megahercios a 3 gigahercios (UHF) o en GSM 3G y 4G graban rango de 50mts- a 180mts
+https://www.todoelectronica.com/es/534-espionaje-y-contraespionaje
+
+/////TIENDA DE ESCANERS DE ARTEFACTOS ELECTRONICOS
+https://www.jjndigital.com/products/edd-24t/
+
+------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////
+////// OSINT O BUSCAR INFORMACION DE UNA PERSONA EN INTERNET  /////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+OSRFRAMEWORK
+git clone https://github.com/i3visio/osrframework
+cd osrframework/
+pip3 install osrframework
+alias_generator.py  //para buscar por alias
+domainfy.py -n google -o google  //busca el dominio google y lo almacena en google
+mailfy.py -n nandu -o nandu // busca el correo electronico y lo almacena en nandu
+searchfy.py -q �ravi� -o ravi  //busca los url que tienes ravi y lo almacena en ravi
+
+https://noticiasseguridad.com/tutoriales/encuentre-a-cualquier-persona-en-internet-usando-esta-herramienta/
+
+WEBMII.COM  //buscar por nombre de persona
+https://yandex.com/    //buscar por foto de persona 
+https://esgeeks.com/eagleeye-perfiles-redes-sociales-por-imagen/    //buscar por foto de persona 
+
+https://infotracer.com/     // Buscar por correo, nombre, numero de celular, en USA
+http://verifyphonenumbers.com/   //Busqueda de informacion por numero de celular en USA
+https://validnumber.com/     //Busqueda de informacion por numero de celular en USA
+
+----------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////
+////// MEDIDAS DE PROTECCION CONTRA INTRUSOS  /////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+/////////LINUX
+usermod -L nombreusuario  //Bloquea al usuario de sistema
+usermod -s /bin/bash/nologin nombreusuario  //desbloque al usuario
+
+nano /etc/host.allow   //Bloquear el acceso en ssh de una ip 
+sshd: 192.168.1.100: deny   //se pone esto dentro de host.allow y bloque la ip terminada en 100
+
+nano /etc/host.deny   //Bloquear el acceso en ssh de todos 
+sshd: ALL: spawn /bin/echo "Acceso denegado al servicio" %d "desde el equipo" %h >> /Denegados
+
+
+chattr +a nombrefichero  //Para que el ficheo solo lo abra el usuari root
+chattr �i nombrefichero 
+
+---------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////
+////// OSINT - Inteligencia de fuentes abiertas ///////////////////////////
+/////////////////////////////////////////////////
+
+interrogatorio digital : no es un cuestionario, sino adquirir informacion de sus dispositivos moviles
+
+crminologia : educativo
+criminalista: inductiva 
+
+planificacion : que queremos hacer? que queremos buscar?, tecnicas y herramientas.
+obtencion : generacion de identidades, busqueda por informacion personal
+procesamiento : escoger la informacion
+analisis : 
+inteligencia :
+
+
+la informacion se divide entre : personal y organizacion
+
+herramientas osint:
+buscadores habituales, buscadores espesificos
+metagoofi, libextrator, domaintools, robtex, myipneighbors, redes sociales,
+gooscan, sitedigger, osintstalker, cree.py , theharvester, palantir, maltego
+
+DATOS: 
+Nombre, edad, lugar de vivienda, educacion, familia, viajas, vida laboral, gustos personales
+datos personales, que hacer cotidinao, etiquetado de los familiares, constumbres personales, bienes personales, ego
+
+--------------------------------------
+
+
+Los mejores sitios web para probar tus habilidades de pirater�a  
+https://pwnable.kr/
+ https://hack.me/
+ 
+https://ctflearn.com/
+ 
+https://google-gruyere.appspot.com/ #TheCyberArmy
+ 
+https://www.root-me.org/en/
+ 
+https://www.hackthebox.eu/
+ 
+https://www.hacking-lab.com/
+ 
+http://www.gameofhacks.com/
+ 
+https://overthewire.org/
+ 
+https://microcorruption.com/
+ 
+https://xss-game.appspot.com/?utm_source...dium=email
+ 
+https://www.hackthissite.org/pages/index/index.php
+ 
+https://crackmes.one/
+ https://pentest.training/
+ 
+https://www.hellboundhackers.org/
+ 
+http://hax.tor.hu/
+ 
+https://thisislegal.com/
+ 
+https://tryhackme.com/
+
+
+
