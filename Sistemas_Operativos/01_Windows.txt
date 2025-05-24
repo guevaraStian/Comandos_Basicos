@@ -1,0 +1,35 @@
+///////////////
+/// COMANDOS WINDOWS
+///////////////
+
+
+pwd // Muesta en pantalla la ubicación de donde esta nuestro terminal  
+dir // Lista en pantalla las carpetas dentro de nuestra ubicación de terminal
+cd  // Acceder a una carpeta
+cd ..  // Salir de la carpeta
+
+ipconfig   // Podemos ver la ip que tiene la maquina y otros detalles de la red
+ping   // Podemos ver conectividad con otros dispositivos
+systeminfo   // Podemos ver informacio del sistema windows
+netstat   // muestra las conexiones de red activas en nuestro equipo
+shutdown  // apaga o reinicia el equipo.
+
+mkdir  // En donde estamos ubicados crea una nueva carpeta
+del  // elimina un archivo
+copy  // copia un archivo 
+move  // mueve un archivo o carpeta a otro directorio.
+ren   // renombra un archivo o carpeta.
+cls   // limpia la pantalla de la consola.
+
+ipconfig //flushdns: limpia la caché DNS de nuestro equipo.
+sfc /scannow   // verifica y repara los archivos del sistema dañados.
+taskmgr  // abre el Administrador de tareas de Windows.
+msconfig  // nos permite configurar el inicio de Windows.
+tasklist  // muestra la lista de procesos en ejecución en nuestro sistema.
+taskkill  // nos permite finalizar un proceso en particular.
+chkdsk  // verifica y repara los errores en nuestro disco duro.
+format  // formatea una unidad de almacenamiento.
+
+
+
+

@@ -1,0 +1,31 @@
+/////////////////////////PREGUNTAS AL ROUTER O SWITCH CAPA 3
+show interface vlan1  //Para ver la direccion mac de la interface vlan
+show ip interface vlan1 //para ver el estado de la vlans
+show version  //para ver la version de ios
+show flash:  //nombre de la imagen del sistema
+dir flash:  //examinar la informacion en la flash
+show vlan  //examinar la configuracion vlan 
+show vlan brief  //verificar los puertos de la vlan
+show interface vlan 99  //ver la velocidad de la interface, su estado
+show mac-address-table   // direcciones mac usadas en la vlan
+show vlan brief  //ver la lista de vlan y sus nombres
+show spanning-tree vlan 1 //el estado del árbol de expansión de cada switch
+erase startup-config  //sirve para borrar la configuracion en lo switches
+delete vlan.dat  //elimina la informacion guardada en la VLAN
+reload  //reiniciar switch
+show interfaces | include Ethernet
+show interface status
+show interfaces trunk
+
+////IPV4
+show ip interface brief | exclude unassigned   // Ver las ips asignadas y que interface esta habilitada o deshabilidata
+show interfaces gigabitEthernet 0/0/0 | include duplex //verificar la velocidad en esa interface
+show interface | include Desc|conn  //para ver el id del circuito
+
+
+////IPV6
+show ipv6 int brief  //ver el estado de las interfaces y sus ips
+show ipv6 route  // ver si las interfaces estan C=conectadas L=local S=static R=RIP etc..
+show run | include ipv6|interface  //ver todas las ipv6 configuradas en el router 
+
+

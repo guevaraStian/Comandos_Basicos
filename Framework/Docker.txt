@@ -1,0 +1,30 @@
+# Los siguientes comandos son para usar los contenedores docker
+#Confirmamos la instalación con el siguiente comando
+COMANDOS DOCKER
+docker --versión  // Muestra versión del docker
+docker info  // Muestra información del sistema
+docker help  // muestra listado de comandos disponibles
+
+// Comandos de imágenes
+docker images  // Lista todas las imágenes locales
+docker pull <image>   // Descarga una imagen desde Docker hub
+docker rmi <image>  // Elimina una imagen local
+docker build -t <name> .  // Construye imagen desde un dockerfile
+
+// Trabajando con contenedores
+
+docker ps // muestra los contenedores en ejecucion
+docker ps -a // muestra todos los contenedores en ejecucio y apagados
+
+docker run <image>  // crea y ejecuta un contenedor
+docker run -it <image>  // ejecuta contenedor en modo interactivo
+docker run -d <image>   // ejecuta contenedor en segundo plano
+docker stop <container-id>   // detiene un contenedor en ejecucion
+docker start <container-id>   // inicia contenedor que estaba detenido
+docker restart <container-id>   // reinicia un contenedor
+docker rm <container-id>   // elimina un contenedor detenido
+docker exec -it <contaniner-id> bash  // accede al terminal del contenedor
+
+// Log de contenedores
+docker logs <container-id>  // muestra los logs de un contenedor
+docker logs -f <container-id>   // muestra los logs en tiempo real
