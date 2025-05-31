@@ -1,0 +1,30 @@
+//////////////////////////////SWITCH
+show sdm prefer
+configure terminal
+sdm prefer dual-ipv4-and-ipv6 default
+end
+reload
+
+////////////////////////CONFIGURACION DE SWITCH
+Switch> enable 
+Switch# configure terminal 
+Switch(config)# hostname S1 
+S1(config)# no ip domain-lookup   //prevenir que se ejecuten comandos como usuario
+S1(config)# interface vlan 1 
+S1(config-if)# ip address 172.16.1.2 255.255.255.0 
+S1(config-if)# no shutdown 
+S1(config-if)# end
+S1# show interfaces vlan 1
+S1(config-if)#ip default-gateway 192.168.0.1
+
+S1# show arp
+show mac address-table     //para ver las MACs conectadas al switch
+clear mac address-table dynamic    //borrar las MAC guardadas en cache
+show ip route   //ver la configuracion ip del router
+
+
+
+interface range F0/2-24, G0/2   //para apagar todos los puertos menos el f0/1 y el g0/1 para mejorar la seguridad
+shutdown    //con este los apaga
+
+

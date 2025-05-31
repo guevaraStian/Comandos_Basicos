@@ -1,0 +1,42 @@
+///////////////
+/// COMANDOS LINUX
+///////////////
+
+pwd  // Muesta en pantalla la ubicación de donde esta nuestro terminal  
+ls  // Lista en pantalla las carpetas dentro de nuestra ubicación de terminal
+cd   // Acceder a una carpeta
+cd ..  // Salir de la carpeta
+
+
+// INFORMACION DEL SISTEMA
+history (Historial de comandos): Muestra el historial de comandos ejecutados.
+uname (Información del kernel): Muestra información sobre el kernel del sistema.
+df (Espacio en disco): Muestra la cantidad de espacio libre en los dispositivos de almacenamiento.
+du (Espacio en disco por directorio): Muestra el espacio ocupado por los directorios y archivos.
+
+// ARCHIVOS
+mkdir (Crear directorio): Crea un nuevo directorio.
+rmdir (Eliminar directorio): Elimina un directorio vacío.
+rm (Eliminar archivo o directorio): Elimina archivos o directorios.
+mv (Mover o renombrar): Mueve o renombra archivos y directorios.
+cp (Copiar): Copia archivos o directorios.
+
+// EDICCION DE TEXTO
+cat (Concatenar y mostrar): Visualiza el contenido de un archivo o varios archivos.
+head (Mostrar las primeras líneas): Muestra las primeras líneas de un archivo.
+tail (Mostrar las últimas líneas): Muestra las últimas líneas de un archivo.
+grep (Buscar patrones): Busca patrones específicos en un archivo.
+nano o vim (Editores de texto): Permiten editar archivos de texto dentro del terminal.
+Gestión de procesos:
+ps (Mostrar procesos): Lista los procesos en ejecución.
+top (Monitorear procesos): Muestra los procesos que están utilizando más recursos del sistema.
+kill (Terminar procesos): Termina un proceso específico.
+
+
+
+
+
+
+
+
+
