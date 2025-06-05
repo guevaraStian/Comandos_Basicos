@@ -1,0 +1,26 @@
+
+///////////////////////////
+/////////// COMANDOS MAC
+/////////////////////////
+
+pwd  // Muesta en pantalla la ubicación de donde esta nuestro terminal  
+ls  // Lista en pantalla las carpetas dentro de nuestra ubicación de terminal
+cd   // Acceder a una carpeta
+cd ..  // Salir de la carpeta
+
+sudo // Permite ejecutar comandos como administrador, requiriendo la contraseña del usuario.
+system_profiler  // Muestra información detallada sobre el hardware, software y configuración de red.
+ifconfig  // Muestra o configura interfaces de red.
+killall [nombre_aplicación]  //  Finaliza una aplicación en ejecución. 
+
+mkdir [nombre_directorio] // Crea un nuevo directorio.
+rm [nombre_archivo]  // Elimina un archivo.
+rm -r [nombre_directorio]  //Elimina un directorio (y su contenido).
+touch [nombre_archivo]  //Crea un archivo nuevo
+. 
+Comandos de visualización y edición de archivos:
+ls    // Lista los archivos y carpetas en el directorio actual.
+ls -a  // Lista todos los archivos, incluyendo los ocultos.
+ls -l  // Muestra información detallada de los archivos, como permisos y fechas.
+cat [nombre_archivo]  //Muestra el contenido de un archivo.
+open [nombre_archivo]  // Abre un archivo con la aplicación predeterminada. 
