@@ -1,0 +1,71 @@
+///////////////////////////SSH
+telnet 10.10.10.2
+cisco
+cisco
+copy running-config startup-config  //guardar copia de seguridad 
+show running-config   //para ver las contraseñas
+ip domain-name netacad.pka   //configurar el nombre del dominio 
+crypto key generate rsa   //generar claves rsa
+1024
+
+username administrator secret cisco  //se crea el usuario adm con la clave secreta cisco
+S1(config)#line vty 0 15      //configuracion del ssh
+S1(config-line)#transport input ssh
+S1(config-line)#login local
+S1(config-line)#no password cisco  //borra la contraseña
+exit  //3 veces para salir del telnet
+
+ssh -l administrador 10.10.10.2   //para ingresar al ssh del usuario adm y la ip
+cisco //clave
+
+
+
+
+/////////////////CONFIGURACION DE LA CONTRASEÑA
+enable
+configure terminal
+line console 0
+password letmein
+login
+exit
+
+enable password c1$c0
+exit
+show running-config   //con este comando se ve las configuraciones del router.
+enable secret itsasecret
+exit
+service password-encryption //para encriptar las contraseñas
+exit
+banner motd "This is a secure system. Authorized Access Only!"   //este codigo muestra un comentario cuando alguien ingresa al router
+copy running-config startup-config  //sirve para guardar la configuracion del router
+startup-config    //este comando muestra el contenido en la NVRAM
+
+
+
+
+
+/////CONFIGURACION SEGURA DE UN ROUTER
+
+service password-encryption
+security password min-length 10  //para que el password sea mayor a 10 digitos
+enable password s1e2c3u4r5i6t7y
+no ip domain-lookup    //desactiva las busquedas de dns
+ip domain-name cualquiera.com  //nombre del dominio
+username any_user secret any_password  //crear usuario y contraseña
+crypto key generate rsa  //se encripta la clave en rsa
+login block-for 180 attempts 4 within 120   //tiene  intentos para ingresar o sino le toca esperar 120 segundos
+line console 0 4    //ingresamos a console 0
+transport input ssh   //establecemos transporte por ssh
+login local      //login
+exec-timeout 6  //tiempo de espera 6 minutos 
+copy running-config startup-config  //se guarda todo
+
+
+
+
+
+
+
+
+
+
