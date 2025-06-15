@@ -1,0 +1,33 @@
+----------------------------------
+///////////////////////////////////////////////////////////
+/////////QUITAR CONTRASE�A EN WINDOWS
+////////////////////////////////////////////////////////
+estando en el inicio de sesion dar click en shift sostenido y luego dar click en reiniciar
+
+solucionar problemas
+opciones avanzadas
+simbolo de sistema
+
+cuando ya estemos en cmd vamos al disco duro donde este el windows
+ejeemplo:  d:
+
+cd windows/system32
+
+rename osk.exe osk.old
+rename cmd.exe osk.exe
+
+net user
+net user tuUsuario *
+
+buscamos otra vez el inicio de sesion
+volvemos a estar en el inicio de sesion dar click en shift sostenido y luego dar click en reiniciar
+solucionar problemas
+opciones avanzadas
+simbolo de sistema
+
+cuando ya estemos en cmd vamos al disco duro donde este el windows
+ejeemplo:  d:
+
+cd windows/system32
+rename osk.exe cmd.exe
+rename osk.old osk.exe
