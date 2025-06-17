@@ -1,0 +1,20 @@
+///////////////CONFIGURAR DHCP
+show ip interface brief  //ver las direcciones ip configuradas por el dhcp
+show ip dhcp binding  // Verificar las asignaciones de DHCP con direccion MAC
+show ip dhcp server statistics
+
+ip dhcp excluded-address 192.168.10.1 192.168.10.10  //excluir un rango de ips del DHCP
+
+//Configure el pool de DHCP para que incluya la dirección de red, el gateway predeterminado y la dirección IP del servidor DNS.
+R2(config)# ip dhcp pool R1-LAN    //se hace desde Router 2 con informacion de router 1
+R2(dhcp-config)# network 192.168.10.0 255.255.255.0  
+R2(dhcp-config)# default-router 192.168.10.1
+R2(dhcp-config)# dns-server 192.168.20.254
+R2(config)# interface g0/1   //Se configura la interface donde se conectara el servidor DHCP
+R2(config-if)# ip address dhcp 
+R2(config-if)# no shutdown
+
+// Indicar porque interface y por cual ip llega el DHCP la dirección auxiliar (ip helper) para la interfaz LAN en R1
+R1(config)# interface g0/0    
+R1(config-if)# ip helper-address 10.1.1.2
+
