@@ -1,0 +1,18 @@
+///////////////CONFIGURAR HSRP PARA TENER UNA ROUTER VIRTUAL Y QUE SIRVA POR SI SE CAE 1 ROUTER
+interface g0/1
+standby version 2
+standby 1 ip 192.168.1.254
+standby 1 priority 150
+standby 1 preempt
+
+R3(config)#int g0/0
+R3(config-if)#sta
+R3(config-if)#standby ver 2
+R3(config-if)#standby 1 ip 192.168.1.254
+
+show standby
+show standby brief
+
+S1(config)#ip default-gateway 192.168.1.254  //si hay switch hay que ponerle la puerta de enlace
+S3(config)#ip default-gateway 192.168.1.254
+//si hay pc tambien hay que ponerle la puerta de enlace del router virtual
