@@ -1,0 +1,54 @@
+------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////
+////// SPAM DE SMS O CORREO  /////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+GOD-KILLER   //funciona 1 vez por dia y se puede anexar link en el mensaje
+git clone https://github.com/FDX100/GOD-KILLER.git 
+cd GOD-KILLER
+python install.py
+./GOD-KILLER
++57
+<numero victima>
+<mensaje que ira hacia la victima>
+
+
+TBOMB  // solo envia 1 mensajes a una victima
+git clone https://github.com/TheSpeedX/TBomb.git           
+cd TBomb
+chmod +x TBomb.sh
+./TBomb.sh
+1
+<IndicativoReginoalVictima>
+<NumeroVictima>
+https://www.youtube.com/watch?v=CNO1H5P8VEY       // Spam de mensajes
+
+
+SPAMMER-GRAB  //PIDE USUARIO Y CONTRASE�A DE GITHUB
+git clone https://github.com/Noxturnix/Spammer-Grab 
+cd Spammer-Grab 
+chmod +x auto-install.sh
+./auto-install.sh 
+chmod +x spammer.py
+python2 spammer.py �h //h les muestra los comandos
+Python2 spammer.py �delay 2 5918844747
+
+
+EMAIL-BOMBER: //Les pedira servidor del correo, Gmail o Yahoo 
+git clone https://github.com/zanyarjamal/Email-bomber.git 
+cd Email-bomber 
+python2 E-bomber.py 
+1
+//Les pedir� su correo depende a lo que pusiste arriba
+//Colocan su contrase�a para logearse
+https://www.youtube.com/watch?v=9r6KtuIbrSw
+
+
+INSTASPAM  //no hay videos tutoriales
+git clone https://github.com/thelinuxchoice/instaspam.git 
+cd instaspam 
+chmod +x instaspam.sh 
+bash instaspam.sh � ./instaspam.sh 
+
+
+PROGRAMAS QUE DAN UN MES GRATIS DE SPAM https://www.websitetooltester.com/es/blog/programas-para-enviar-correos-masivos/
