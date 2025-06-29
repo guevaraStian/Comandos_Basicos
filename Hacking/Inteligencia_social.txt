@@ -1,0 +1,30 @@
+------------------------------------------------------------------------
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////INGENIERIA SOCIAL ///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+1) INGENIERIA SOCIAL:
+por medio del carisma y las relaciones obtener informacion sobre la victima
+
+2)INGENIERIA SOCIAL INVERSA
+crea la necesidad y luego vende el producto
+ejemplo: compre el seguro anti robo, hay muchos ladrones por aqui
+
+3)INGENIERIA SOCIAL OSINT
+recolectar informacion en internet de la victima
+
+4)INGENIERIA SOCIAL SIN TECNOLOGIA
+seguir a la persona, anotaciones de su comportamiento, rutina, horario laboral
+1 Base - Utilizar la voluntad de ayudar de tu objetivo.
+2 Base - Ganarnos la confianza de nuestro objetivo.
+3 Base - Aprovechar que a las personas les cuesta decir que no
+4 Base - Subir el Ego de tu objetivo.
+5 Base - Demostrar inter�s por tu objetivo.
+6 Base - Empatizar a trav�s del buen humor, la sonrisa
+7 Base - Llamar a tu objetivo por su nombre
+8 Base - Inducir al objetivo a que hable de si mismo.
+9 Base - Dirigir la conversaci�n en base a lo que predecimos de su inter�s.
+10 Base - Hacer sentir importante al objetivo.
+11 Base - Ofenderte.
+12 Base - Utilizar las personas del entorno
+
