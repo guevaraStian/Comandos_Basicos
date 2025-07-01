@@ -1,0 +1,37 @@
+// COMANDOS RELACIONADOS A FRAMEWORK FLUTTER
+flutter doctor  // Caracteristicas de flutter
+flutter doctor -v  // ver version de flutter
+flutter create <nombre_del_proyecto>  // Crear proyecto
+flutter clean   // Elimina los artefactos de compilación generados.
+flutter doctor --android-lucenses   // Anexar librerias de android
+flutter build web   // Compilar el proyectos 
+flutter run  // Ejecutar el software
+flutter run -d web-server   // Ejecutar software web
+flutter config --enable-web //para habilitar el desarrollo web. 
+
+
+flutter devices //la gestión de dispositivos 
+flutter pub get  //la actualización de dependencias 
+flutter pub upgrade  // Actualiza las dependencias del proyecto a sus versiones más recientes.
+flutter format .   // Formatea todo el código Dart en el proyecto. 
+
+flutter test   //Ejecuta las pruebas unitarias del proyecto.
+flutter analyze   //Analiza el código en busca de errores y problemas. 
+
+flutter help  // Muestra información de ayuda sobre cualquier comando Flutter.
+flutter precache  // Pre-descarga los artefactos necesarios para el desarrollo.
+flutter config  //Configura opciones globales de Flutter.
+flutter channel  // Muestra o cambia el canal de Flutter (ej. stable, beta, master). 
+
+// CONSTRUCCION DE EL EJECUTABLE
+flutter build apk   // Construye un archivo APK para Android.
+flutter build appbundle  //Construye un Android App Bundle (AAB).
+flutter build ios   // Construye una aplicación iOS.
+flutter build web  // Construye una aplicación web.
+flutter build macos  // Construye una aplicación para macOS.
+flutter build linux   //Construye una aplicación para Linux.
+flutter build windows  //Construye una aplicación para Windows. 
+
+
+
+
