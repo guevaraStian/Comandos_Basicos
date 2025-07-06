@@ -1,0 +1,15 @@
+
+BUSQUEDAS EN GOOGLE
+* inurl:webarch/mainframe.cgi                      //Impresoras
+* intitle:"network print server" filetype:shtm     //impresoras
+* allintitle:restricted filetype:doc site:gov      //Sitios restringidos , se puede cambiar restricted por "top secret" o "confidential", "doc","pdf", "txt"
+* passwords|contrase as|login|contrase a filetype:txt site:Web.com     //contrase as, logins en documentos txt , tambien se puede cambiar el txt
+* "index of"/"chat/logs"                            //logs de chats almacenados en servidores
+* "Microsoft (R) Windows * (TM) Version * DrWtsn32 Copyright (C)" ext:log       //Procesos ejecutandose en el servidor para ver antivirus o firewall
+* inurl:":8080"  -intext:8080                       //servidores que tienen activo el puerto 8080 en este caso
+* intitle:index.of wd_ftp.log                       //Log de acceso por FTP
+* intitle:"the page cannot be found""please**following""internet*Services"   //permite saber el tipo de servidor
+*  site : * .google.com                             // buscar todo lo relacionado con google.com
+* filetype:pdf
+* intitle:login
+* inurl:admin
