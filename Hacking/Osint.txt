@@ -1,0 +1,49 @@
+------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////
+////// OSINT O BUSCAR INFORMACION DE UNA PERSONA EN INTERNET  /////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+interrogatorio digital : no es un cuestionario, sino adquirir informacion de sus dispositivos moviles
+
+crminologia : educativo
+criminalista: inductiva 
+
+planificacion : que queremos hacer? que queremos buscar?, tecnicas y herramientas.
+obtencion : generacion de identidades, busqueda por informacion personal
+procesamiento : escoger la informacion
+analisis : 
+inteligencia :
+
+
+la informacion se divide entre : personal y organizacion
+
+herramientas osint:
+buscadores habituales, buscadores espesificos
+metagoofi, libextrator, domaintools, robtex, myipneighbors, redes sociales,
+gooscan, sitedigger, osintstalker, cree.py , theharvester, palantir, maltego
+
+DATOS: 
+Nombre, edad, lugar de vivienda, educacion, familia, viajas, vida laboral, gustos personales
+datos personales, que hacer cotidinao, etiquetado de los familiares, constumbres personales, bienes personales, ego
+
+
+
+OSRFRAMEWORK
+git clone https://github.com/i3visio/osrframework
+cd osrframework/
+pip3 install osrframework
+alias_generator.py  //para buscar por alias
+domainfy.py -n google -o google  //busca el dominio google y lo almacena en google
+mailfy.py -n nandu -o nandu // busca el correo electronico y lo almacena en nandu
+searchfy.py -q  ravi  -o ravi  //busca los url que tienes ravi y lo almacena en ravi
+
+https://noticiasseguridad.com/tutoriales/encuentre-a-cualquier-persona-en-internet-usando-esta-herramienta/
+
+WEBMII.COM  //buscar por nombre de persona
+https://yandex.com/    //buscar por foto de persona 
+https://esgeeks.com/eagleeye-perfiles-redes-sociales-por-imagen/    //buscar por foto de persona 
+
+https://infotracer.com/     // Buscar por correo, nombre, numero de celular, en USA
+http://verifyphonenumbers.com/   //Busqueda de informacion por numero de celular en USA
+https://validnumber.com/     //Busqueda de informacion por numero de celular en USA
+

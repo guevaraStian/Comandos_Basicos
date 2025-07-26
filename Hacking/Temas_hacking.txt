@@ -19,7 +19,7 @@ mapa de antenas en colombia http://medicionantenas.ane.gov.co:82/#
 Mapa de trafico en el mundo https://www.waze.com/es/livemap?utm_source=waze_website&utm_campaign=waze_website&utm_expid=.K6QI8s_pTz6FfRdYRPpI3A.0&utm_referrer=      
 Detecto de radares moviles o radares fijos  http://www.radarbot.com/    
 Emisoras en colombia por el ministerio tic https://www.mintic.gov.co/portal/maparadio/631/w3-channel.html 
-Contrase�as de aeropuerto https://ensedeciencia.com/2021/03/15/lista-de-contrasenas-wi-fi-de-todos-los-aeropuertos-del-mundo/?fbclid=IwAR0RJmuXj-_fQV89L8lWoZfCk-mY0g5nhxGG0gG8mJslFxCQan4TPMbKBa8
+Contrase as de aeropuerto https://ensedeciencia.com/2021/03/15/lista-de-contrasenas-wi-fi-de-todos-los-aeropuertos-del-mundo/?fbclid=IwAR0RJmuXj-_fQV89L8lWoZfCk-mY0g5nhxGG0gG8mJslFxCQan4TPMbKBa8
 Significado y raiz de los apellidos https://www.familysearch.org/es/surname
 Bibliotega de geneologica de colombia https://www.academiadegenealogia.org/biblioteca-juan-florez-ocariz
 Mapas de hackeo en vivo https://hackersonlineclub.com/live-cyber-attack-maps/?fbclid=IwAR2WnlsQe48Pa2E9TxNaUnjcrvrT7iZ7LgFC843wMHLHOsiPwRaejZkdV-w
@@ -37,7 +37,7 @@ http://connectkjsazkwud.onion/register
 http://galaxy3bhpzxecbywoa2j4tg43muepnhfalars4cce3fcx46qlc6t3id.onion/?offset=25#
 http://tetatl6umgbmtv27.onion/
 
-Direcci�n onion: https://wwhclublci77vnbi.onion/
+Direcci n onion: https://wwhclublci77vnbi.onion/
 
 FOROS DE HACKING
 http://verified2ebdpvms.onion/
@@ -108,9 +108,9 @@ https://noticiasseguridad.com/tutoriales/como-disfrazar-un-malware-como-txt-jpeg
 
 ---------------------------------------------------------------------------
 Detector de camara:
-Spy Camera Detector � https://play.google.com/store/apps/details?id=com.trackapps.hiddencameradetected
-Hidden Camera � https://play.google.com/store/apps/details?id=com.softmaticsoft.hiddencameradetectorspysecret
-Hidden Camera Detector � https://play.google.com/store/apps/details?id=hiddencamdetector.futureapps.com.hiddencamdetector
+Spy Camera Detector   https://play.google.com/store/apps/details?id=com.trackapps.hiddencameradetected
+Hidden Camera   https://play.google.com/store/apps/details?id=com.softmaticsoft.hiddencameradetectorspysecret
+Hidden Camera Detector   https://play.google.com/store/apps/details?id=hiddencamdetector.futureapps.com.hiddencamdetector
 
 ANDRILLER
 DRFONE WONDERSHARE
@@ -163,6 +163,31 @@ https://www.jjndigital.com/products/edd-24t/
 ////// OSINT O BUSCAR INFORMACION DE UNA PERSONA EN INTERNET  /////////////////
 //////////////////////////////////////////////////////////////////////////////////////
 
+interrogatorio digital : no es un cuestionario, sino adquirir informacion de sus dispositivos moviles
+
+crminologia : educativo
+criminalista: inductiva 
+
+planificacion : que queremos hacer? que queremos buscar?, tecnicas y herramientas.
+obtencion : generacion de identidades, busqueda por informacion personal
+procesamiento : escoger la informacion
+analisis : 
+inteligencia :
+
+
+la informacion se divide entre : personal y organizacion
+
+herramientas osint:
+buscadores habituales, buscadores espesificos
+metagoofi, libextrator, domaintools, robtex, myipneighbors, redes sociales,
+gooscan, sitedigger, osintstalker, cree.py , theharvester, palantir, maltego
+
+DATOS: 
+Nombre, edad, lugar de vivienda, educacion, familia, viajas, vida laboral, gustos personales
+datos personales, que hacer cotidinao, etiquetado de los familiares, constumbres personales, bienes personales, ego
+
+
+
 OSRFRAMEWORK
 git clone https://github.com/i3visio/osrframework
 cd osrframework/
@@ -170,7 +195,7 @@ pip3 install osrframework
 alias_generator.py  //para buscar por alias
 domainfy.py -n google -o google  //busca el dominio google y lo almacena en google
 mailfy.py -n nandu -o nandu // busca el correo electronico y lo almacena en nandu
-searchfy.py -q �ravi� -o ravi  //busca los url que tienes ravi y lo almacena en ravi
+searchfy.py -q  ravi  -o ravi  //busca los url que tienes ravi y lo almacena en ravi
 
 https://noticiasseguridad.com/tutoriales/encuentre-a-cualquier-persona-en-internet-usando-esta-herramienta/
 
@@ -199,40 +224,12 @@ sshd: ALL: spawn /bin/echo "Acceso denegado al servicio" %d "desde el equipo" %h
 
 
 chattr +a nombrefichero  //Para que el ficheo solo lo abra el usuari root
-chattr �i nombrefichero 
-
----------------------------------------------------
-////////////////////////////////////////////////////////////////////////////////////////////
-////// OSINT - Inteligencia de fuentes abiertas ///////////////////////////
-/////////////////////////////////////////////////
-
-interrogatorio digital : no es un cuestionario, sino adquirir informacion de sus dispositivos moviles
-
-crminologia : educativo
-criminalista: inductiva 
-
-planificacion : que queremos hacer? que queremos buscar?, tecnicas y herramientas.
-obtencion : generacion de identidades, busqueda por informacion personal
-procesamiento : escoger la informacion
-analisis : 
-inteligencia :
-
-
-la informacion se divide entre : personal y organizacion
-
-herramientas osint:
-buscadores habituales, buscadores espesificos
-metagoofi, libextrator, domaintools, robtex, myipneighbors, redes sociales,
-gooscan, sitedigger, osintstalker, cree.py , theharvester, palantir, maltego
-
-DATOS: 
-Nombre, edad, lugar de vivienda, educacion, familia, viajas, vida laboral, gustos personales
-datos personales, que hacer cotidinao, etiquetado de los familiares, constumbres personales, bienes personales, ego
+chattr  i nombrefichero 
 
 --------------------------------------
 
 
-Los mejores sitios web para probar tus habilidades de pirater�a  
+Los mejores sitios web para probar tus habilidades de pirater a  
 https://pwnable.kr/
  https://hack.me/
  
