@@ -1,0 +1,95 @@
+
+
+//////////////////////
+//// EJEMPLOS DE CONFIGURACION DE REDES
+//////////////////////
+
+///////////////CONFIGURAR VLAN EN SWITCH Y VLAN
+enable secret class  //programamos la contraseña del enable
+line console 0
+password cisco
+login
+line vty 0 4
+password cisco
+login
+service password-encryption
+interface vlan 1  //se escoje el nombre de la vlan
+ip address 192.168.1.12 255.255.255.0
+no shu
+vlan 1
+name Operations
+show vlan brief  //ver la lista de vlan y sus nombres
+
+//se le asigna a esta interface la vlan 10
+S1(config)# interface f0/6 
+S1(config-if)# switchport mode access
+S1(config-if)# switchport access vlan 10  
+no shu
+
+
+S1(config)# interface range f0/2-5, f0/7-24, g0/1-2
+S1(config-if-range)# switchport mode access
+S1(config-if-range)# switchport access vlan 999
+S1(config-if-range)# shutdown
+
+//se transfiere la direccion ip del switch a la VLAN99
+S1(config)# interface vlan 1 
+S1(config-if)# no ip address 
+S1(config-if)# interface vlan 99  
+S1(config-if)# ip address 192.168.1.11 255.255.255.0
+S1(config-if)# end
+
+//Se elimina una Vlan de una interface
+S1(config)# interface f0/24
+S1(config-if)# no switchport access vlan
+S1(config-if)# end
+
+//Se elimina la vlan pero los puertos quedan inactivos
+S1(config)# no vlan 30
+S1(config)# end
+
+//configurar una interface en elace troncal, 
+//esto es necesario para que 2 switch con VLAN igual (VLAN1) se puedan comunicar
+S1(config)# interface f0/1
+S1(config-if)# switchport mode dynamic desirable
+show interfaces trunk
+S1(config)# interface f0/1
+S1(config-if)# switchport mode trunk  //802.1q se usa para configurar de forma manual la troncal y se debe hacer en los 2 extremos de comunicacion
+
+//Cambiar la configracion troncal de ambos switch de VLAN1 a VLAN1000
+S1(config)# interface f0/1
+S1(config-if)# switchport trunk native vlan 1000
+
+//Cambia el modo de switchport en la interfaz F0/1 para forzar el enlace troncal
+S1(config)# interface f0/1
+S1(config-if)# switchport mode trunk
+S1(config-if)# switchport trunk native vlan 1000  //establece la vlan nativa 1000
+S1(config-if)# switchport trunk allowed vlan 10,20,30,1000  // especifica que esas vlan pueden pasar por la troncal
+
+//Sirve para poner encapsulado 802.1Q y asignarle la Vlan10 a la subinterface 0.10
+R1(config)# int g0/0.10
+R1(config-subif)# encapsulation dot1Q 10
+R1(config-subif)# ip address 172.17.10.1 255.255.255.0
+
+ipv6 unicast-routing  //habilitar el enrutamiento ipv6
+erase startup-config  //Para obtener una copia de cambio de su configuracion predeterminada
+delete vlan.dat   //eliminar vlan
+show interface g0/1.10
+show interface trunk
+
+//Configuracion de Etherchannel
+S1(config)#int range f0/21-22
+S1(config-if-range)#switchport mode trunk
+S1(config)# interface range f0/21 – 22
+S1(config-if-range)# shutdown
+S1(config-if-range)# channel-group 1 mode desirable
+S1(config-if-range)# no shutdown
+S1(config)# interface port-channel 1
+S1(config-if)# switchport mode trunk
+S1(config)# spanning-tree vlan 1 priority 24576
+
+
+
+
+
+
