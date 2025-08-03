@@ -88,14 +88,15 @@ http://www.cursodehackers.com/ManInTheMiddle.html
 ///////////////////CRIPTOGRAFIA Y ESTEGANOGRAFIA ///////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
 
+///// ESTEGANOGRAFIA 
+//se ingresa una imagen y el documento en un mismo archivo y el documento se mete en un RAR luego se abre consola y se ingresa este codigo
+COPY/B nombreimagen.png + nombrearchivorar.rar nombredelanuevaimagen.png
+
 //////DEEPFAKE - Crear videos de una imagen fija
 https://colab.research.google.com/github/AwaleSajil/DeepFake_1/blob/master/first_order_model_demo(Youtube)_new_audioV5_a.ipynb#scrollTo=tQB-Dv8ByURc
 https://github.com/AliaksandrSiarohin/first-order-model
 https://www.xatakandroid.com/listas/cinco-aplicaciones-para-crear-divertidos-deepfakes-android
 
-///// ESTEGANOGRAFIA 
-//se ingresa una imagen y el documento en un mismo archivo y el documento se mete en un RAR luego se abre consola y se ingresa este codigo
-COPY/B nombreimagen.png + nombrearchivorar.rar nombredelanuevaimagen.png
 
 ESTEGANOGRAFIA EN AUDIOS
 https://noticiasseguridad.com/tutoriales/transferir-cualquier-dato-confidencial-mediante-el-sonido-usando-deepsound/?fbclid=IwAR3KvIeB-lVp1FU-Nq6S3O-rct26NKccVItA2dnJzcagmXTIbcgkOa4D-0M
@@ -106,59 +107,9 @@ https://noticiasseguridad.com/tutoriales/las-6-mejores-herramientas-gratuitas-de
 GUARDAR VIRUS EN UNA IMAGEN con HxD Hex Editor HxD y Winrar Archiver
 https://noticiasseguridad.com/tutoriales/como-disfrazar-un-malware-como-txt-jpeg-o-cualquier-formato-de-archivo-en-6-sencillos-pasos/?fbclid=IwAR3tFdpggobciIZ9xRfOsdruF9Be3gbWSFyUX1mkrXv24OZQO9lj05f-NGk
 
----------------------------------------------------------------------------
-Detector de camara:
-Spy Camera Detector   https://play.google.com/store/apps/details?id=com.trackapps.hiddencameradetected
-Hidden Camera   https://play.google.com/store/apps/details?id=com.softmaticsoft.hiddencameradetectorspysecret
-Hidden Camera Detector   https://play.google.com/store/apps/details?id=hiddencamdetector.futureapps.com.hiddencamdetector
 
-ANDRILLER
-DRFONE WONDERSHARE
-SPY NOTE
-ANDRORAT
-AHMYTH
-DROIDJACK  - cuesta
-REPTILICUS  - cuesta
 
-CREAR JAMMER DE WIFI CON SOFTWARE LIBRE https://noticiasseguridad.com/tutoriales/venga-a-tus-vecinos-bloqueando-cualquier-wifi-en-una-cuadra-3-formas-de-crear-un-jammer-wifi-sin-hardware/?fbclid=IwAR01mymn4NDvC9zRog34bprcqDbgNbXwAefP_VnN_UOTjG8737ogniBMwqQ
-----------------------------------------------------------------------------------------
-////////////////////////////////////////////////////////////////////////////////////////////
-//////INHIBIDOR DE FRECUENCIAS GPS DE 1000Mhz Y 1500Mhz Y DERRIBADOR DE DRONES  /////////////////
-//////////////////////////////////////////////////////////////////////////////////////
 
-https://www.xdrones.es/inhibidor-de-frecuencia-casero-derribar-drones-inhibidor-gps/
-GUIA PARA HACKEAR DRON https://www.xdrones.es/guia-para-hackear-el-ar-drone-2-0/
-https://www.google.com/search?q=inhibidor+de+microondas&rlz=1C1SQJL_esCO872CO872&oq=inhibidor+de+microondas&aqs=chrome..69i57.9496j1j7&sourceid=chrome&ie=UTF-8
-
-////JAMMER DE BLOUTUBE DESDE UN CELULAR
-https://noticiasseguridad.com/tutoriales/cobre-venganza-de-sus-vecinos-ruidosos-saboteando-sus-bocinas-bluetooth-como-crear-un-bluetooth-jammer-con-solo-9-comandos-y-sin-hardware-especial/?fbclid=IwAR1XOruPVwjShfh7SNxa6OcTvCMLSqjtazRwu_vdxuJbMSK60mJA1OpJ6eE
-
-////PISTOLA DE ELECTROMAGNETISMO
-https://www.youtube.com/watch?v=l_U5_NhLck8
-
----------------------------------------------------------------------------------------
-
-////////////////////////////////////////////////////////////////////////////////////////////
-//////TIENDAS DE INTERCEPTACION E INHIBICION DE EL ESPECTRO ELECTROMAGNETICO  /////////////////
-//////////////////////////////////////////////////////////////////////////////////////
-
-https://www.thespyphone.com/
-https://www.intercept.ws/
-https://www.contrainteligencia.com/
-https://www.mollitiamindustries.com/
-
-Mejores programas para espiar android, iphon y computador
-https://www.adslzone.net/listas/mejores-programas/espiar-pc/
-
-/////TIENDA DE ARTEFACTOS ESPIA
-https://www.tacticalsecurity.net/
-Estos artefactos funcionan en un rango de 300 megahercios a 3 gigahercios (UHF) o en GSM 3G y 4G graban rango de 50mts- a 180mts
-https://www.todoelectronica.com/es/534-espionaje-y-contraespionaje
-
-/////TIENDA DE ESCANERS DE ARTEFACTOS ELECTRONICOS
-https://www.jjndigital.com/products/edd-24t/
-
-------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////// OSINT O BUSCAR INFORMACION DE UNA PERSONA EN INTERNET  /////////////////
 //////////////////////////////////////////////////////////////////////////////////////
